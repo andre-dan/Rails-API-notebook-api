@@ -10,13 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_27_000514) do
+ActiveRecord::Schema.define(version: 2021_04_27_004319) do
 
   create_table "contacts", force: :cascade do |t|
     t.string "name"
-    t.string "emial"
-    t.string "birthdate"
-    t.string "Date"
+    t.string "email"
+    t.date "birthdate"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
